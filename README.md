@@ -9,7 +9,8 @@
 | password  | steing | null:false |
 ### Association
 - has_many :posts
-- has_many :groups
+- has_many :users_groups
+- has_many :groups, through: :users_groups
 
 # postsテーブル
 | Column  | Type    | Options                     |
@@ -25,7 +26,8 @@
 | ---------- | ---- | ------- |
 | group_name | text |         |
 ### Association
-- has_many :users
+- has_many :users_groups
+- has_many :users, through: :users_groups
 
 # users_groupsテーブル
 | Column   | Type    | Option                      |
