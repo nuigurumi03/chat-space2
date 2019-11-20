@@ -6,7 +6,7 @@
 | -------- | ------ | ---------- |
 | name     | string | null:false |
 | email    | string | null:false |
-| password | steing | null:false |
+| password | string | null:false |
 ### Association
 - has_many :posts
 - has_many :users_groups
